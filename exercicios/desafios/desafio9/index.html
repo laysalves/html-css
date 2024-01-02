@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Meus vídeos</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Vídeos legais para assitir</h1>
+        <div class="content">
+            <a href="html.html"><img src="thumb-html.png" alt="imagem.html"></a>
+            <a href="js.html"><img src="thumb-js.png" alt="imagem.js"></a>
+            <a href="python.html"><img src="thumb-python.png" alt="imagem.python"></a>
+            <a href="hardware.html"><img src="thumb-hardware.png" alt="imagem.hardware"></a>
+        </div>
+    </div>
+</body>
+
+<style>
+    @media (max-width: 600px) {
+        .content {
+            width: 400px!important;
+        }
+    }
+
+    @media (max-width: 468px) {
+        .content {
+            width: 200px!important;
+        }
+    }
+
+    .title {
+        /* position: absolute; */
+        top: 40px;
+        color: white;
+    }
+
+    html {
+        width: 100%;
+        height: 100%;
+    }
+    body {
+        margin: auto;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        background-image: url('assets/background.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+        background-color: #223240;
+    }
+    .container {
+        display: flex;
+        width: 80%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        /* position: relative; */
+    }
+    
+
+    .content {
+        /* position: absolute; */
+      
+        top:  150px;
+        background-color: #223240;
+        border-radius: 10px;
+        padding: 20px;
+        width: 50%;
+        flex-wrap: wrap;
+        justify-content: center;
+        display: flex;
+
+    }
+
+    .content a {
+        display: flex;
+        width: calc(50% - 20px);
+        margin: 10px;
+    }
+    .container a img {
+        width: 100%;
+    }
+
+</style>
+
+</html>
